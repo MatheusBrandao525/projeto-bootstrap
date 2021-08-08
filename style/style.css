@@ -1,0 +1,85 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.menu{
+    background-color: black;
+    padding: 0 2%;
+}
+
+.link{
+    color: white;
+    margin-top: 25px;
+}
+
+.Logo{
+    color: white;
+    background-color: black;
+    width: 190px;
+    height: 50px;
+    margin-top: 33px;
+}
+
+.corpo{
+    background-color: gray;
+    padding-bottom: 20px;
+}
+
+.card img{
+    border: none;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.border{
+    border: 1px solid white;
+}
+
+.cards{
+    margin-top: 22px;
+}
+
+.servicos{
+    background-color: grey;
+}
+
+
+
+.sobre img{
+    width: 300px;
+    border-radius: 200px;
+    border: none;
+}
+
+.sobre{
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.textearea{
+    margin-top: 16px;
+}
+
+.padding{
+    margin-bottom: 8px;
+}
+
+.formulario{
+    border-left: 4px solid gray;
+    border-right: 4px solid gray;
+    padding-bottom: 15px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}

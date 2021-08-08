@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>UsandoBootstrap</title>
+</head>
+<body>
+    <nav class="container-fluid menu">
+        <div class="nav links justify-content-center">
+            <div class="Logo">LOGO-MARCA</div>
+            <a href="#Home" class="nav-link link">Home</a>
+            <a href="#servicos" class="nav-link link">Serviços</a>
+            <a href="#Sobre" class="nav-link link">Sobre</a>
+            <a href="#Contato" class="nav-link link">Contato</a>
+        </div>
+    </nav>
+
+    <section id="Home" class="container corpo">
+        <h1 class="titulo">Corpo</h1>
+
+        <div class="row cards">
+            <div class="col-lg-4 ">
+                <div class="card">
+                    <img src="imgs/bootstrap.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body border">
+                    <h5 class="card-title">Titulo</h5>
+                    <p class="card-text">Texto do meu card</p>
+                    <a href="#" class="btn btn-primary">Clique aqui</a>
+                </div><!--card-body-->
+            </div><!--col-lg-4-->
+
+            <div class="col-lg-4 ">
+                <div class="card">
+                    <img src="imgs/css.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body border">
+                    <h5 class="card-title">Titulo</h5>
+                    <p class="card-text">Texto do meu card</p>
+                    <a href="#" class="btn btn-primary">Clique aqui</a>
+                </div><!--card-body-->
+            </div><!--col-lg-4-->
+
+            <div class="col-lg-4 ">
+                <div class="card">
+                    <img src="imgs/github.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body border">
+                    <h5 class="card-title">Titulo</h5>
+                    <p class="card-text">Texto do meu card</p>
+                    <a href="#" class="btn btn-primary">Clique aqui</a>
+                </div><!--card-body-->
+            </div><!--col-lg-4-->
+        </div><!--row cards-->
+    </section>
+
+    <section id="servicos" class="container servicos">
+        <h4 class="titulo">Serviços</h4>
+        <div id="carroceldeImagens" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carroceldeImagens" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1"></button>
+                <button type="button" data-bs-target="#carroceldeImagens" data-bs-slide-to="1" aria-label="slide 2"></button>
+                <button type="button" data-bs-target="#carroceldeImagens" data-bs-slide-to="2" aria-label="slide 3"></button>
+            </div><!--carousel-indicators-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/imagem01.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Primeiro slide</h5>
+                        <p>Some responsive placeholdder content for the first slide.</p>
+                    </div><!--carousel-caption-->
+                </div><!--carousel-item-->
+
+                <div class="carousel-item">
+                    <img src="imgs/imagem02.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Segundo slide</h5>
+                        <p>Some responsive placeholdder content for the first slide.</p>
+                    </div><!--carousel-caption-->
+                </div><!--carousel-item-->
+
+                <div class="carousel-item">
+                    <img src="imgs/imagem03.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Terceiro slide</h5>
+                        <p>Some responsive placeholdder content for the first slide.</p>
+                    </div><!--carousel-caption-->
+                </div><!--carousel-item-->
+            </div><!--carousel-inner-->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carroceldeImagens" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carroceldeImagens" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div><!--carousel slide-->
+    </section>
+
+    <section id="Sobre" class="container corpo ">
+        <h4 class="titulo">Sobre</h4>
+        <div class="sobre container">
+            <img src="imgs/perfil.jpg" class="img-thumbnail justify-content-center" alt="">
+            <div class="texto justify-content-center">
+                <h2>Matheus F. Brandão</h2>
+                <p>Estudante de programação, cursando Analise e desenvolvimento de sistemas na rede universitaria Claretiano.</p>
+            </div><!--texto-->
+        </div><!--sobre-->
+    </section>
+
+    <section id="Contato" class="container justify-content-center formulario">
+        <h4 class="titulo">Contato</h4>
+        <div class="form">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6 textearea">
+                    <label class="padding" for="floatingTextarea2">Mensagem</label>
+                    <textarea class="form-control" placeholder="Escreva sua mensagem..." id="floatingTextarea2" style="height: 50px"></textarea>
+                    <!--<input type="textarea" class="form-control" id="inputtexte">-->
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Endereço</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Complementos</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Cidade</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Estado</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Cep</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+
+<footer class="container-fuid footer">
+    <h5 class="rodape">Desenvolvido por Matheus F. Brandão</h5>
+</footer>
+
+</html>
